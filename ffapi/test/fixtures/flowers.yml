@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  variety: MyString
+  indoor_sowing_date: MyString
+  outdoor_sowing_date: MyString
+  grow_height: MyString
+  spread: MyString
+  soil: MyString
+  sun_light: MyString
+  days_to_germination: MyString
+  soil_temp: MyString
+  planting_depth: MyString
+  weeks_to_transplant: MyString
+  annual: MyString
+  perennial: MyString
+
+two:
+  variety: MyString
+  indoor_sowing_date: MyString
+  outdoor_sowing_date: MyString
+  grow_height: MyString
+  spread: MyString
+  soil: MyString
+  sun_light: MyString
+  days_to_germination: MyString
+  soil_temp: MyString
+  planting_depth: MyString
+  weeks_to_transplant: MyString
+  annual: MyString
+  perennial: MyString
