@@ -1,0 +1,47 @@
+﻿variety,indoor_sowing_date,days_to_germination,soil_temp,planting_depth,weeks_to_transplant,outdoor_sowing_date,grow_height,spread,soil,light,annual,perennial
+Ageratum,December-March,7,75-78,1/8 inch,9,,,,,,true,false
+Alyssum,December-March,8,78-82,1/6 inch,11,,,,,,true,false
+Amaranthus,December-March,14,68-70,1/2 inch,8,,,,,,true,false
+Aster,January-April,8,70-75,1/8 inch,8,,,,,,true,false
+Bachelor Button,February-March,8,68-70,1/4 inch,5,,,,,,true,false
+Baby’s Breath,February-March,8,68-72,1/4 inch,7,,,,,,true,false
+Celosia,January-April,10,70-80,1/8 inch,6,,,,,,true,false
+Coleus,December-March,10,70-75,1/4 inch,8,,,,,,true,false
+Cosmos,January-April,5,68-72,1/4 inch,6,,,,,,true,false
+Daisies,February- March,8,70-75,1/4 inch,6,,,,,,true,false
+Geraniums,November-February,8,70-75,1/2 inch,15,,,,,,true,false
+Impatiens,December-March,15,68-72,1/8 inch,11,,,,,,true,false
+Marigolds,January-April,7,70-80,1/8 inch,8,,,,,,true,false
+Moon Flower,February-March,8,70-75,1/4 inch,7,,,,,,true,false
+Morning Glory,February-March,8,70-75,1/4 inch,5,,,,,,true,false
+Nasturtium,February-March,8,70-74,1/2 inch,6,,,,,,true,false
+Pansy,November-February,16,55-65,1/8 inch,8,,,,,,true,false
+Petunia,December-March,10,70-80,top,10,,,,,,true,false
+Salvia,December-March,15,75-78,1/10 inch,9,,,,,,true,false
+Sunflower,February-March,6,70-80,1,nil,,,,,,true,false
+Sweet Pea,February-March,8,70-75,1,5,,,,,,true,false
+Vinca,December-March,15,70-80,1/4 inch,12,,,,,,true,false
+Zinnias,January-April,7,68-72,1/8 inch,7,,,,,,true,false
+Achillea,june,,60,1/8 inch,,Early,24-36,18,"Average, well-drained",Full,false,true
+Black Eyed Susan,nil,,60,1/4 inch,,Anytime,24-36,18,Average,Full,false,true
+Blanket Flower,june,,70,1/8 inch,,1-4 after,24-40,15,Loose,Full,false,true
+Butterfly Flower,june,,70,1/8 inch,,1-4 after,24-36,18-20,"Sandy, well-drained",Partial,false,true
+Candytuft,june,,65,1/8 inch,,Early,1-15,11,Well-drained,Partial,false,true
+Coneflower,nil,,70,1/4 inch,,Early,24-42,19,Well-drained,Full,false,true
+Coreopsis,nil,,70,1/8 inch,,1-4 after,18-48,6,Moist,Full/Partial,false,true
+Dahlia,june,,65,1/8 inch,,Early,12-36,16-24,"Rich, fertile",Full,false,true
+Daisies,nil,,60,1/8 inch,,Early,12-36,22,"Rich, well-drained",Full,false,true
+Delphinium,june,,60,1/8 inch,,1-4 after,12-48,18,Average,Full/Partial,false,true
+Dianthus,june,,70,1/8 inch,,Early,18-24,22,"Rich, well-drained",Full,false,true
+Foxglove,nil,,65,1/8 inch,,Early,24-60,24,Average,Full/Partial,false,true
+Geraniums,june,,70,1/8 inch,,1-4 after,6-36,21,Any soil,Full/Partial,false,true
+Hosta,june,,70,1/2 inch,,Early,24-40,24-40,Well-drained,Partial,false,true
+Hollyhock,june,,65,1/8 inch,,Early,48-72,18-24,"Rich, well-drained",Full/Partial,false,true
+Lupine,nil,,70,1/8 inch,,2-4 after,24-36,23,Average,Full/Partial,false,true
+Penstemon,june,,70,Top,,2-6 after,12-36,18,Loose,Full,false,true
+Phlox,june,,60,1/8 inch,,Early,6-18,19,"Rich, loose",Full,false,true
+Poppy,june,,60,3/8 inch,,Anytime,24-30,22,Any soil,Full/Partial,false,true
+Primrose,nil,,60,1/8 inch,,Early,8-15,24,"Rich, moist",Full/Partial,false,true
+Rudbeckia,nil,,60,1/4 inch,,Anytime,24-36,18,Average,Full,false,true
+Tansy,nil,,65,1/4 inch,,Early,36-48,6,Average,Full/Partial,false,true
+Viola,june,,65,1/8 inch,,Early,4-8,6,Average,Partial,false,true
