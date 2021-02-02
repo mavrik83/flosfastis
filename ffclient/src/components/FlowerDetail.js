@@ -7,3 +7,13 @@ class FlowerDetail extends Component {
   render() {
     return (
     );
+  }
+}
+
+const mapStatetoProps = (state) => {
+  return { flower: state.selectedFlower.attributes };
+};
+
+export default connect(mapStatetoProps, { selectFlower: selectFlower })(
+  FlowerDetail
+);
