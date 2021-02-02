@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import FlowerDetail from "./components/FlowerDetail";
+import FlowerList from "./components/FlowerList";
+import Header from "./components/Header";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="ui container transparent">
+        <BrowserRouter>
+          <Header />
+          <Route path="/" exact component={FlowerList} />
+          <Route path="/flowers/:id" exact component={FlowerDetail} />
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
 
 export default App;
