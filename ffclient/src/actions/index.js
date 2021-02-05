@@ -29,4 +29,13 @@ export const deleteFlower = (id) => async (dispatch) => {
   dispatch({ type: "DELETE_FLOWER", payload: id });
 };
 
+export const getFrostInfo = (zip) => async (dispatch) => {
+  const response = await fetch(`http://localhost:3002/scrape/${zip}`, {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      return result;
+    });
+  dispatch({ type: "GET_FROST", payload: response });
 };
