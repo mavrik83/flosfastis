@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchFlowers } from "../actions";
 import FlowerItem from "./FlowerItem";
 import { Segment, Grid } from "semantic-ui-react";
 import _ from "lodash";
 import LandingSplash from "./LandingSplash";
 
 class FlowerList extends Component {
-  componentDidMount() {
-    this.props.fetchFlowers();
-  }
-
   render() {
+    if (!this.props.flowers) {
+      return <></>;
+    }
+
     const renderedFlowers = _.orderBy(this.props.flowers, [
       "attributes.variety",
     ]).map((flower) => {
@@ -20,6 +19,7 @@ class FlowerList extends Component {
           key={flower.attributes.id}
           name={flower.attributes.variety}
           id={flower.attributes.id}
+          condition={flower.attributes.user_created}
         />
       );
     });
@@ -41,6 +41,4 @@ const mapStatetoProps = (state) => {
   return { flowers: state.flowers };
 };
 
-export default connect(mapStatetoProps, { fetchFlowers: fetchFlowers })(
-  FlowerList
-);
+export default connect(mapStatetoProps, null)(FlowerList);
