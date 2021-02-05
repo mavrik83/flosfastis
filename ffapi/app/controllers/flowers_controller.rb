@@ -5,14 +5,16 @@ class FlowersController < ApplicationController
     render json: FlowerSerializer.new(flowers)
   end
 
-  def show
-    flower = Flower.find_by(id: params[:id])
-
   def create
     flower = Flower.new(flower_params)
     flower.user_created = true
     flower.save
     render json: FlowerSerializer.new(flower)
+  end
+
+  def destroy
+    flower = Flower.find(params[:id])
+    flower.delete
   end
 
   private
