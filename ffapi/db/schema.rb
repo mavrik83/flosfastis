@@ -10,24 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_26_044644) do
+ActiveRecord::Schema.define(version: 2021_02_03_135347) do
 
   create_table "flowers", force: :cascade do |t|
     t.string "variety"
-    t.string "indoor_sowing_date"
-    t.string "outdoor_sowing_date"
-    t.integer "grow_height"
-    t.integer "spread"
-    t.string "soil"
-    t.string "sun_light"
-    t.integer "days_to_germination"
+    t.string "sowing_time"
     t.string "soil_temp"
     t.string "planting_depth"
-    t.integer "weeks_to_transplant"
+    t.string "grow_height"
+    t.string "spread"
+    t.string "sun_light"
     t.boolean "annual"
-    t.boolean "perennial"
+    t.boolean "sow_indoors"
+    t.string "transplant"
+    t.string "days_to_maturity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "user_created", default: false
   end
 
   create_table "schedules", force: :cascade do |t|

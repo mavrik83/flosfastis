@@ -4,22 +4,21 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 
 require 'csv'
-csv_text = File.read(Rails.root.join('lib/seeds/flowers.csv'))
-csv = CSV.parse(csv_text, liberal_parsing: true, headers: true, encoding: 'ISO-8859-1')
+csv_text = File.read(Rails.root.join('lib/seeds/flowerset.csv'))
+csv = CSV.parse(csv_text, liberal_parsing: true, headers: true, encoding: 'UTF-8')
 csv.each do |row|
   Flower.create({
                   variety: row[0],
-                  indoor_sowing_date: row[1],
-                  days_to_germination: row[2],
-                  soil_temp: row[3],
-                  planting_depth: row[4],
-                  weeks_to_transplant: row[5],
-                  outdoor_sowing_date: row[6],
-                  grow_height: row[7],
-                  spread: row[8],
-                  soil: row[9],
-                  sun_light: row[10],
-                  annual: row[11],
-                  perennial: row[12]
+                  sowing_time: row[1],
+                  soil_temp: row[2],
+                  planting_depth: row[3],
+                  grow_height: row[4],
+                  spread: row[5],
+                  sun_light: row[6],
+                  annual: row[7],
+                  sow_indoors: row[8],
+                  transplant: row[9],
+                  days_to_maturity: row[10]
+
                 })
 end

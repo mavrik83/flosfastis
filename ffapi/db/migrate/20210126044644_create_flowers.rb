@@ -2,19 +2,17 @@ class CreateFlowers < ActiveRecord::Migration[6.0]
   def change
     create_table :flowers do |t|
       t.string :variety
-      t.string :indoor_sowing_date
-      t.string :outdoor_sowing_date
-      t.integer :grow_height
-      t.integer :spread
-      t.string :soil
-      t.string :sun_light
-      t.integer :days_to_germination
+      t.string :sowing_time
       t.string :soil_temp
       t.string :planting_depth
-      t.integer :weeks_to_transplant
+      t.string :grow_height
+      t.string :spread
+      t.string :sun_light
       t.boolean :annual
-      t.boolean :perennial
-
+      t.boolean :sow_indoors
+      t.string :transplant
+      t.string :days_to_maturity
+      
       t.timestamps
     end
   end

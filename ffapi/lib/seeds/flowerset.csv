@@ -1,0 +1,30 @@
+﻿variety,sowing_time,soil_temp,planting_depth,grow_height,spread,sun_light,annual,sow_indoors,transplant,days_to_maturity
+Ageratum,6-8 weeks before,75-80,top,,9-12,sun,true,true,at first leaf,80-100
+Alyssum,4-5 weeks before,65-70,,,6-8,sun/part shade,true,true,after last frost,50-60
+Amaranthus,4-6 weeks before,70-75,covered,,12-15,sun,true,true,after last frost,65-75
+Aster,6-8 weeks before,70-72,1/8 inch deep,,6-12,sun,true,true,after last frost,110-120
+Bachelor Button,3-4 weeks before,60-65,1/4 inch deep,,2-9,sun,true,true,at first leaf,65-75
+Baby’s Breath,6-8 weeks before,70-72,1/8 inch deep,18-24,8,sun,true,true,after last frost,45-50
+Celosia,6-8 weeks before,70-80,1/8 inch deep,,6-12,sun,true,true,after last frost,90-95
+Cosmos,5-7 weeks before,68-72,,,9-12,sun,true,true,after last frost,75-90
+Daisies,6-8 weeks before,65-75,covered,,6-8,sun,true,true,after last frost,55-65
+Geraniums,,40-50,4-5 inches deep,,1-6,sun/part shade,false,false,before first frost,80-100
+Marigolds,4-6 weeks before,75-80,1/4 inch deep,,8-18,sun,true,true,after last frost,70-90
+Morning Glory,after last frost,60-70,1/4 inch deep,,6,sun,true,false,,45-50
+Nasturtium,3-4 weeks before,60-65,1 inch deep,,8-12,sun/part shade,true,true,after last frost,55-65
+Pansy,8-12 weeks before,62-68,,,6-9,sun/part shade,true,true,after last frost,60-70
+Petunia,10 weeks before,,,,10,sun/part shade,true,true,after last frost,50-06
+Salvia,6-8 weeks before,75-78,1/4 inch deep,,12,sun/part shade,true,true,after last frost,125-130
+Sunflower,after last frost,70-75,1/2 inch deep,,4-6,sun,true,false,,50-55
+Sweet Pea,4-5 weeks before,55-65,1/4 inch deep,,6,sun,true,true,after last frost,75-85
+Zinnias,4 weeks before,80-85,1/4 inch deep,,9-12,sun,true,true,after last frost,75-90
+Achillea,8-10 weeks before,65-72,,,12-24,sun,false,true,at first leaf,120-130
+Black Eyed Susan,5-7 weeks before,68-72,,,12-18,sun,false,true,after last frost,90-105
+Coneflower,8-10 weeks before,65-70,,,18-24,sun,false,true,after last frost,300-365
+Dahlia,4-5 weeks before,65-70,1/4 inch deep,40-60,9-10,sun,false,true,after last frost,75-90
+Daisies,6-8 weeks before,65-75,,,6-8,sun,true,true,after last frost,55-65
+Delphinium,10-16 weeks before,65-70,,,12-18,sun/part shade,false,true,after last frost,105-125
+Dianthus,6-8 weeks before,65-72,,,6,sun,false,true,after last frost,130-140
+Foxglove,10-12 weeks before,65-70,,,12,sun/part shade,false,true,after last frost,365
+Lupine,4-8 weels before,65-75,,,18-24,sun/part shade,false,true,after last frost,365
+Poppy,6-8 weeks before,65-75,,15-20,6-8,sun/part shade,false,true,after last frost,85-100
