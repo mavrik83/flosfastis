@@ -21,4 +21,12 @@ export const createFlower = (formValues) => async (dispatch) => {
     });
   dispatch({ type: "CREATE_FLOWER", payload: response.data });
 };
+
+export const deleteFlower = (id) => async (dispatch) => {
+  await fetch(`http://localhost:3002/flowers/${id}`, {
+    method: "DELETE",
+  });
+  dispatch({ type: "DELETE_FLOWER", payload: id });
+};
+
 };
