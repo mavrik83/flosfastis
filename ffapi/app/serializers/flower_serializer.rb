@@ -1,4 +1,4 @@
 class FlowerSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :id, :variety, :indoor_sowing_date, :outdoor_sowing_date, :grow_height, :spread, :soil, :sun_light, :days_to_germination, :soil_temp, :planting_depth, :weeks_to_transplant, :annual, :perennial
+  attributes :id, :variety, :sowing_time, :soil_temp, :planting_depth, :grow_height, :spread, :sun_light, :annual, :sow_indoors, :transplant, :days_to_maturity, :user_created
 end
