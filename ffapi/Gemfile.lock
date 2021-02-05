@@ -88,6 +88,7 @@ GEM
     nio4r (2.5.4)
     nokogiri (1.11.1-x86_64-darwin)
       racc (~> 1.4)
+    open-uri (0.1.0)
     puma (4.3.7)
       nio4r (~> 2.0)
     racc (1.5.2)
@@ -155,6 +156,8 @@ DEPENDENCIES
   byebug
   fast_jsonapi
   listen (~> 3.2)
+  nokogiri
+  open-uri
   puma (~> 4.1)
   rack-cors
   rails (~> 6.0.3, >= 6.0.3.4)
