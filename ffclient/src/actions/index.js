@@ -64,3 +64,10 @@ export const createEvent = (eventObject) => async (dispatch) => {
   dispatch({ type: "CREATE_EVENT", payload: response.data });
 };
 
+export const deleteEvent = (id) => async (dispatch) => {
+  await fetch(`http://localhost:3002/events/${id}`, {
+    method: "DELETE",
+  });
+  dispatch({ type: "DELETE_EVENT", payload: id });
+};
+
