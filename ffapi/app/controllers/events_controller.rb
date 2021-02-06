@@ -20,6 +20,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:name, :begin_time, :harvest_day, :planting_day)
+    params.require(:event).permit(:name, :location, :begin_time, :harvest_day, :planting_day)
   end
 end
