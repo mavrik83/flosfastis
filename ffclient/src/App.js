@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchFlowers, fetchEvents } from "./actions";
-import FlowerDetail from "./components/FlowerDetail";
-import FlowerCreate from "./components/FlowerCreate";
+import FlowerDetail from "./components/flowers/FlowerDetail";
+import FlowerCreate from "./components/flowers/FlowerCreate";
 import Header from "./components/Header";
 import HomeContainer from "./components/HomeContainer";
-// import Timeline from "./components/Timeline";
 
 class App extends Component {
   componentDidMount() {
