@@ -75,6 +75,13 @@ class AddEvent extends Component {
       day: "numeric",
       year: "numeric",
     });
+    const eventObject = this.buildConfigObj(
+      variety,
+      dayToPlantString,
+      dayToHarvestString,
+      dayToPlantInMs
+    );
+
     return (
       <>
         <Button
