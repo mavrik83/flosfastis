@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Segment, Button, Header } from "semantic-ui-react";
-import { Link } from "react-router-dom";
-import ZipCodeSubmit from "./ZipCodeSubmit";
+import { Link, NavLink } from "react-router-dom";
+import ZipCodeSubmit from "./frostdates/ZipCodeSubmit";
 
 const LandingSplash = () => {
   return (
@@ -12,6 +12,11 @@ const LandingSplash = () => {
             <Header style={{ fontSize: "40px" }} textAlign="left">
               Welcome to Flos Fastis
             </Header>
+            <p style={{ float: "right", marginRight: "20px" }}>
+              <small>
+                <em>{`[Latin]`}: flower calendar</em>
+              </small>
+            </p>
           </Segment>
         </Grid.Row>
         <Grid.Row>
@@ -36,9 +41,10 @@ const LandingSplash = () => {
               If there is a flower that is not listed, you may add it to the
               list.
             </p>
-            <Link to={"/flowers/new"}>
-              <Button>Add New Flower</Button>
-            </Link>
+
+            <Button as={NavLink} to={"/flowers/new"}>
+              Add New Flower
+            </Button>
           </Segment>
         </Grid.Row>
       </Grid.Column>
