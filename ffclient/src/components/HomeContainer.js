@@ -1,9 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Grid } from "semantic-ui-react";
-import FlowerList from "./FlowerList";
+import FlowerList from "./flowers/FlowerList";
 import LandingSplash from "./LandingSplash";
-import EventList from "./EventList";
+import EventList from "./events/EventList";
 
 const HomeContainer = (props) => {
   const renderHome = () => {
