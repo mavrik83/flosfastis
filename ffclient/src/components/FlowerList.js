@@ -3,14 +3,9 @@ import { connect } from "react-redux";
 import FlowerItem from "./FlowerItem";
 import { Segment, Grid } from "semantic-ui-react";
 import _ from "lodash";
-import LandingSplash from "./LandingSplash";
 
 class FlowerList extends Component {
   render() {
-    if (!this.props.flowers) {
-      return <></>;
-    }
-
     const renderedFlowers = _.orderBy(this.props.flowers, [
       "attributes.variety",
     ]).map((flower) => {
@@ -24,15 +19,14 @@ class FlowerList extends Component {
       );
     });
     return (
-      <Grid style={{ marginTop: "15px" }}>
+      <>
         <Grid.Column width="6">
           <Segment.Group style={{ overflow: "auto", maxHeight: "85vh" }}>
             {renderedFlowers}
           </Segment.Group>
         </Grid.Column>
         <Grid.Column width="1"></Grid.Column>
-        <LandingSplash />
-      </Grid>
+      </>
     );
   }
 }
