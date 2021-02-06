@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
-import FrostInfo from "./FrostInfo";
+import FrostInfo from "./frostdates/FrostInfo";
 import { NavLink } from "react-router-dom";
-import CreateButton from "./CreateButton";
+import CreateButton from "./events/CreateButton";
 
 class Header extends Component {
   render() {
