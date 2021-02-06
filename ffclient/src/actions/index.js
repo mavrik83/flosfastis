@@ -71,3 +71,6 @@ export const deleteEvent = (id) => async (dispatch) => {
   dispatch({ type: "DELETE_EVENT", payload: id });
 };
 
+export const clearFrost = () => {
+  return { type: "CLEAR_FROST", payload: [] };
+};
