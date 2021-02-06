@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Segment, Button, Header } from "semantic-ui-react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ZipCodeSubmit from "./frostdates/ZipCodeSubmit";
 
 const LandingSplash = () => {
