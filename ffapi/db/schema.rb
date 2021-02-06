@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_03_135347) do
+ActiveRecord::Schema.define(version: 2021_02_05_141442) do
+
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.integer "begin_time"
+    t.string "harvest_day"
+    t.string "planting_day"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "flowers", force: :cascade do |t|
     t.string "variety"
@@ -27,11 +37,6 @@ ActiveRecord::Schema.define(version: 2021_02_03_135347) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "user_created", default: false
-  end
-
-  create_table "schedules", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
