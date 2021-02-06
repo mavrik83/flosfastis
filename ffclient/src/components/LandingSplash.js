@@ -15,15 +15,11 @@ const LandingSplash = () => {
           </Segment>
         </Grid.Row>
         <Grid.Row>
-          <Segment
-            style={{ marginTop: "30px" }}
-            padded="very"
-            textAlign="left"
-            basic
-          >
+          <Segment padded="very" textAlign="left" basic>
             <p style={{ fontSize: "20px" }}>
-              Welcome! To begin planning for your flower planting season, select
-              a flower from the list.
+              Welcome! To begin planning for your flower planting season, first
+              enter your zip code below to find your frost dates, then select a
+              flower from the list.
             </p>
 
             <ZipCodeSubmit />
