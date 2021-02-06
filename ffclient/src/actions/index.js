@@ -39,3 +39,13 @@ export const getFrostInfo = (zip) => async (dispatch) => {
     });
   dispatch({ type: "GET_FROST", payload: response });
 };
+
+export const fetchEvents = () => async (dispatch) => {
+  const response = await fetch("http://localhost:3002/events")
+    .then((response) => response.json())
+    .then((result) => {
+      return result;
+    });
+  dispatch({ type: "FETCH_EVENTS", payload: response.data });
+};
+
