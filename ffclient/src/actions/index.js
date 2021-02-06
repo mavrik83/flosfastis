@@ -49,3 +49,18 @@ export const fetchEvents = () => async (dispatch) => {
   dispatch({ type: "FETCH_EVENTS", payload: response.data });
 };
 
+export const createEvent = (eventObject) => async (dispatch) => {
+  const response = await fetch("http://localhost:3002/events", {
+    method: "POST",
+    body: JSON.stringify(eventObject),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      return result;
+    });
+  dispatch({ type: "CREATE_EVENT", payload: response.data });
+};
+
