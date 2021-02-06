@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Segment, Grid, Header } from "semantic-ui-react";
 import _ from "lodash";
 import { useParams } from "react-router-dom";
+import AddEvent from "./AddEvent";
 
 const FlowerDetail = (props) => {
   const { id } = useParams();
@@ -20,9 +21,6 @@ const FlowerDetail = (props) => {
     transplant,
     days_to_maturity,
   } = selectedFlower[0].attributes;
-
-  console.log(id);
-
   return (
     <Grid style={{ marginTop: "15px" }}>
       <Grid.Column width="3"></Grid.Column>
@@ -64,6 +62,7 @@ const FlowerDetail = (props) => {
             </li>
           </ul>
         </Segment>
+        <AddEvent id={id} />
       </Grid.Column>
     </Grid>
   );
