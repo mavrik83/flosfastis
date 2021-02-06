@@ -33,8 +33,10 @@ class AddEvent extends Component {
     const springLastFrostDayInMs = Date.parse(
       this.props.frost.lastSpringFrost + ", 2021"
     );
+    const location = this.props.frost.location;
 
     const eventObject = parseData(
+      location,
       variety,
       sowing_time,
       days_to_maturity,

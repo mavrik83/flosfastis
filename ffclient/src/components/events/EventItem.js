@@ -9,9 +9,12 @@ const EventItem = (props) => {
         <EventDelete id={props.id} />
         <Card.Header content={`Sow: ${props.plantingDay}`} />
         <Card.Meta content={props.name} />
-        <Card.Description
-          content={`approx harvest day: ${props.harvestDay}.`}
-        />
+        <Card.Description>
+          approx harvest day: {props.harvestDay}. <br />
+          <small style={{ color: "gray", fontSize: "10px" }}>
+            Location: {props.location}
+          </small>
+        </Card.Description>
       </Card.Content>
     </Card>
   );

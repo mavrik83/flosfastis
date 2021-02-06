@@ -9,6 +9,7 @@ class FrostInfo extends Component {
       return null;
     }
     const {
+      location,
       altitude,
       lastSpringFrost,
       firstFallFrost,
@@ -25,8 +26,9 @@ class FrostInfo extends Component {
           >
             clear
           </Button>
-          Altitude: {altitude} | Last Spring Frost: {lastSpringFrost} | First
-          Fall Frost: {firstFallFrost} | Growing Season: {growingSeason}
+          {location} | Altitude: {altitude} | Last Spring Frost:{" "}
+          {lastSpringFrost} | First Fall Frost: {firstFallFrost} | Growing
+          Season: {growingSeason}
         </Segment>
       </div>
     );

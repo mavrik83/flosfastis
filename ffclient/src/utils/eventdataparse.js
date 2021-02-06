@@ -1,6 +1,7 @@
 import _, { toInteger } from "lodash";
 
 export const parseData = (
+  location,
   variety,
   sowing_time,
   days_to_maturity,
@@ -41,6 +42,7 @@ export const parseData = (
     year: "numeric",
   });
   const eventObject = {
+    location: location,
     name: variety,
     begin_time: dayToPlantInMs,
     planting_day: dayToPlantString,

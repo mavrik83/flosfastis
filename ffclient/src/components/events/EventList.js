@@ -20,15 +20,13 @@ class EventList extends Component {
           name={item.attributes.name}
           plantingDay={item.attributes.planting_day}
           harvestDay={item.attributes.harvest_day}
+          location={item.attributes.location}
         />
       );
     });
     return (
       <Grid.Column width="9">
-        <Card.Group
-          centered
-          style={{ overflow: "auto", maxHeight: "85vh", marginTop: "1px" }}
-        >
+        <Card.Group centered style={{ overflow: "auto", maxHeight: "85vh" }}>
           {renderedItems}
         </Card.Group>
       </Grid.Column>
