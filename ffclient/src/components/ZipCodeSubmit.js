@@ -24,7 +24,6 @@ class ZipCodeSubmit extends Component {
 
     return (
       <>
-        <p>Enter your zip code to find your frost date information</p>
         <Form onSubmit={this.onFormSubmit}>
           <Form.Field width="8">
             <Input
