@@ -6,6 +6,7 @@ import FlowerDetail from "./components/flowers/FlowerDetail";
 import FlowerCreate from "./components/flowers/FlowerCreate";
 import Header from "./components/Header";
 import HomeContainer from "./components/HomeContainer";
+import Footer from "./components/Footer";
 
 class App extends Component {
   componentDidMount() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/flowers/new" exact component={FlowerCreate} />
             <Route path="/flowers/:id" exact component={FlowerDetail} />
           </Switch>
+          <Footer />
         </BrowserRouter>
       </div>
     );
