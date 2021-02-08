@@ -16,6 +16,7 @@ class ZipCodeSubmit extends Component {
     event.preventDefault();
     if (this.state.term && /^[0-9]{5}$/.test(this.state.term)) {
       this.props.getFrostInfo(this.state.term);
+      this.setState({ term: "" });
     }
   };
 
