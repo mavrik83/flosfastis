@@ -16,17 +16,28 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="ui container">
-        <BrowserRouter>
-          <Header />
-          <Switch>
-            <Route path="/" exact component={HomeContainer} />
-            <Route path="/flowers/new" exact component={FlowerCreate} />
-            <Route path="/flowers/:id" exact component={FlowerDetail} />
-          </Switch>
+      <>
+        <div
+          className="ui container"
+          style={{
+            display: "flex",
+            minHeight: "100vh",
+            flexDirection: "column",
+          }}
+        >
+          <div style={{ flex: 1 }}>
+            <BrowserRouter>
+              <Header />
+              <Switch>
+                <Route path="/" exact component={HomeContainer} />
+                <Route path="/flowers/new" exact component={FlowerCreate} />
+                <Route path="/flowers/:id" exact component={FlowerDetail} />
+              </Switch>
+            </BrowserRouter>
+          </div>
           <Footer />
-        </BrowserRouter>
-      </div>
+        </div>
+      </>
     );
   }
 }
