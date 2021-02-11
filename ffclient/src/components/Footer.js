@@ -1,25 +1,24 @@
 import React from "react";
+import { Icon } from "semantic-ui-react";
 
 const Footer = () => {
   return (
     <div
       style={{
-        padding: "2em",
-        position: "absolute",
-        bottom: "0",
         margin: "auto",
-        textAlign: "right",
-        color: "grey",
-        width: "50%",
+        padding: "15px",
+        backgroundColor: "lightgray",
+        borderRadius: "6px 6px 0 0",
       }}
     >
       Thank you for visiting |{" "}
       <a
         href="https://github.com/mavrik83/flosfastis"
+        // eslint-disable-next-line react/jsx-no-target-blank
         target="_blank"
         style={{ color: "grey" }}
       >
-        source
+        source <Icon name="github" />
       </a>
     </div>
   );
