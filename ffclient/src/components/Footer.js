@@ -5,8 +5,11 @@ const Footer = () => {
   return (
     <div
       style={{
+        width: "90vw",
         margin: "auto",
+        marginTop: "15px",
         padding: "15px",
+        textAlign: "center",
         backgroundColor: "lightgray",
         borderRadius: "6px 6px 0 0",
       }}
