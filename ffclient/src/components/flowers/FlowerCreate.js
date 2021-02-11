@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Field, reduxForm } from "redux-form";
 import { Grid, Segment, Header } from "semantic-ui-react";
 import { createFlower } from "../../actions";
+import { Link } from "react-router-dom";
 import {
   required,
   sowingFormat,
@@ -141,6 +142,9 @@ class FlowerCreate extends Component {
               placeholder="When should plant be transplanted?"
             />
             <button className="ui button">Submit</button>
+            <Link to="/">
+              <button className="ui button">Cancel</button>
+            </Link>
           </form>
         </Grid.Column>
       </Grid>
