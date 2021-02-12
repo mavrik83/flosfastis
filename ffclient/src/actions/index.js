@@ -1,10 +1,9 @@
 export const fetchFlowers = () => async (dispatch) => {
-  const response = await fetch("http://localhost:3002/flowers")
-    .then((response) => response.json())
-    .then((result) => {
-      return result;
-    });
-  dispatch({ type: "FETCH_FLOWERS", payload: response.data });
+  const response = await fetch("http://localhost:3002/flowers");
+  const result = await response.json();
+  // .then((response) => response.json())
+  // .then((result) => {
+  dispatch({ type: "FETCH_FLOWERS", payload: result.data });
 };
 
 export const createFlower = (formValues) => async (dispatch) => {

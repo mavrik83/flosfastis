@@ -17,7 +17,6 @@ const FlowerItem = (props) => {
       <Button floated="right" compact as={NavLink} to={`/flowers/${props.id}`}>
         View
       </Button>
-
       <FlowerDelete condition={props.condition} id={props.id} />
       <span>{renderCondition()}</span>
       <Header floated="left">{props.name}</Header>
