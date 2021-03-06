@@ -22,7 +22,7 @@ store.subscribe(
     saveState(store.getState());
   }, 1000)
 );
-console.log(store);
+
 ReactDOM.render(
   <Provider store={store}>
     <App />

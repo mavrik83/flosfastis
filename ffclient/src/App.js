@@ -6,7 +6,7 @@ import FlowerDetail from "./components/flowers/FlowerDetail";
 import FlowerCreate from "./components/flowers/FlowerCreate";
 import Header from "./components/Header";
 import HomeContainer from "./components/HomeContainer";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 class App extends Component {
   componentDidMount() {
@@ -35,7 +35,7 @@ class App extends Component {
               </Switch>
             </BrowserRouter>
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </>
     );
