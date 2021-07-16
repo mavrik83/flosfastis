@@ -14,6 +14,7 @@ class App extends Component {
     this.props.fetchFlowers();
     this.props.fetchEvents();
   }
+
   render() {
     return (
       <>

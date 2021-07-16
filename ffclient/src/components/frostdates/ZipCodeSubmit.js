@@ -24,7 +24,6 @@ class ZipCodeSubmit extends Component {
     if (this.props.frost.length !== 0) {
       return null;
     }
-
     return (
       <>
         <Form onSubmit={this.onFormSubmit}>
